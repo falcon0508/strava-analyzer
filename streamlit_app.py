@@ -6,7 +6,8 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 from strava_api import save_activities_csv
 import os
-
+import sklearn
+st.write("Running scikit-learn version:", sklearn.__version__)
 st.title("🏃 Strava Run Pace Predictor")
 
 # --- Load model and features ---
