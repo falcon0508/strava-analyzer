@@ -1,19 +1,18 @@
-# 🎈 Blank app template
+# Strava Analyzer App 🏃 
 
-A simple Streamlit app template for you to modify!
+[![Python](https://img.shields.io/badge/python-3.10+-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/streamlit-latest-orange)](https://streamlit.io/)
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Project Overview
 
-### How to run it on your own machine
+A web app built with Streamlit that analyzes Dylan's Strava activity data. The web app is connected to Dylan's Strava API to constantly fetch activity data.
 
-1. Install the requirements
+## Key Features:
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+- Automatically fetches Dylan's Strava activity data
 
-2. Run the app
+- Visualizes Dylan's pace on each activity over time
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+- Predicts Dylan's pace for a future run based on past activity data
+
+[Open App in Streamlit](https://strava-analyzers.streamlit.app/)

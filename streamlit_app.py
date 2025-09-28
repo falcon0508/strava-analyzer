@@ -8,7 +8,7 @@ from strava_api import save_activities_csv
 import os
 import sklearn
 
-st.title("🏃 Strava Run Pace Predictor")
+st.title("Dylan's Strava Run Pace Predictor 🏃 ")
 
 # --- Load model and features ---
 model = joblib.load("model.pkl")
@@ -44,7 +44,7 @@ if not df.empty:
     default_30d = df["rolling_30d_km"].iloc[-1] if not df.empty else 0
 
     # --- Sidebar inputs ---
-    st.sidebar.header("Plan Your Next Run")
+    st.sidebar.header("Plan Dylan's Next Run")
     distance_km = st.sidebar.number_input("Distance (km)", min_value=1.0, max_value=50.0, value=10.0, step=0.5)
     elev_gain_m = st.sidebar.number_input("Elevation Gain (m)", min_value=0, max_value=2000, value=100, step=10)
     rolling_7d_km = st.sidebar.number_input("Last 7 days total km", value=default_7d)
