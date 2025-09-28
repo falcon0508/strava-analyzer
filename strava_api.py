@@ -1,11 +1,14 @@
+from dotenv import load_dotenv
 import requests
 import os
 import pandas as pd
 import time
 
-CLIENT_ID = "178737"
-CLIENT_SECRET = "45f82d9128bc52f7f7d41571c22cf8e6b80392d5"
-REFRESH_TOKEN = "70f836532f8ab6f544c6e0bedfca3d5f04052561"
+load_dotenv()
+
+CLIENT_ID = os.getenv("STRAVA_CLIENT_ID")
+CLIENT_SECRET = os.getenv("STRAVA_CLIENT_SECRET")
+REFRESH_TOKEN = os.getenv("STRAVA_REFRESH_TOKEN")
 TOKEN_URL = "https://www.strava.com/oauth/token"
 ACTIVITIES_URL = "https://www.strava.com/api/v3/athlete/activities"
 
